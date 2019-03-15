@@ -69,7 +69,8 @@
 }
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+  //overflow: auto;
+  overflow: hidden
 }
 
 .noscroll { 
