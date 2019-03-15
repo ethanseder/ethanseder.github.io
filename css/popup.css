@@ -33,7 +33,6 @@
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  overflow-y: scroll;
 }
 .overlay:target {
   visibility: visible;
@@ -73,7 +72,7 @@
   overflow: auto;
 }
 
-.noscroll { 
+body.noscroll { 
   overflow: hidden;
 }
   
