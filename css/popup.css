@@ -33,6 +33,7 @@
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  overflow-y: scroll;
 }
 .overlay:target {
   visibility: visible;
@@ -69,17 +70,13 @@
 }
 .popup .content {
   max-height: 30%;
-  <!-- overflow: auto; -->
-  overflow: hidden
+  overflow: auto;
 }
 
 .noscroll { 
   overflow: hidden;
 }
-.overlay { 
-   position: fixed; 
-   overflow-y: scroll;
-   top: 0; right: 0; bottom: 0; left: 0; }
+  
 
 [aria-hidden="true"]  { display: none; }
 [aria-hidden="false"] { display: block; }
