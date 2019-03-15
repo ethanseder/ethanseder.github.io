@@ -72,7 +72,7 @@
   overflow: auto;
 }
 
-body.noscroll { 
+.popup.noscroll { 
   overflow: hidden;
 }
   
