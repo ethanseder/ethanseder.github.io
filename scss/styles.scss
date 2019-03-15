@@ -841,6 +841,8 @@ footer {
     -----------------------------
 */
 
+
+
 // Collapse timeline
 @media only screen and (max-width: 750px) {
 
@@ -980,6 +982,25 @@ footer {
 
 }
 
+// Extra Small Devices
+@media only screen and (max-width : 480px) {
+
+    #lead-content {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        a {
+            font-size: 0.9em;
+            padding: 5px 10px;
+        }
+    }
+
+}
 .box {
   width: 40%;
   margin: 0 auto;
@@ -1061,24 +1082,4 @@ footer {
   .popup{
     width: 70%;
   }
-}
-
-// Extra Small Devices
-@media only screen and (max-width : 480px) {
-
-    #lead-content {
-        h1 {
-            font-size: 1.5em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        a {
-            font-size: 0.9em;
-            padding: 5px 10px;
-        }
-    }
-
 }
