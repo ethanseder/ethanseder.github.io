@@ -226,7 +226,7 @@
         </div>
     </div>
     <!-- End #projects -->
-				<div id="popup1" class="overlay">
+				<div id="popup1" class="overlay" aria-hidden="true">
 					<div class="popup">
 						<h2>SEAS Racing Team!</h2>
 						<a class="close" href="#projects">&times;</a>
@@ -276,8 +276,6 @@
 					no-scroll class on the body */
 				     overlay.setAttribute('aria-hidden', !overlayOpen);
 				     body.classList.toggle('noscroll', overlayOpen);
-				     
-					  window.alert(body.classList);
 
 				     /* On some mobile browser when the overlay was previously
 					opened and scrolled, if you open it again it doesn't 
