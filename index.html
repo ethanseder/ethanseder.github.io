@@ -222,7 +222,6 @@
         </div>
     </div>
     <!-- End #projects -->
-				<!--
 				<div id="popup1" class="overlay">
 					<div class="popup">
 						<h2>SEAS Racing Team!</h2>
@@ -232,17 +231,7 @@
 						</div>
 					</div>
 				</div>
- 				-->
-				
-				<div id="popup1" class="overlay">
-					<div class="overlay" aria-hidden="true">
-						<h2>SEAS Racing Teamm</h2>
-						<a class="close" href="#projects">&times;</a>
-						<div class="content">
-							Images coming soon!
-						</div>
-					</div>
-				</div>
+ 		
 				
 				<button type="button" class="open-overlay">View Projects</button>
 				<section class="overlay" aria-hidden="true">
@@ -252,6 +241,20 @@
 				    <button type="button" class="close-overlay">CLOSE LAYER</button>
 				  </div>
 				</section>
+				
+				<style>
+				.noscroll { 
+					  overflow: hidden;
+					}
+
+				.overlay { 
+					   position: fixed; 
+					   overflow-y: scroll;
+					   top: 0; right: 0; bottom: 0; left: 0; }
+
+				[aria-hidden="true"]  { display: none; }
+				[aria-hidden="false"] { display: block; }
+				</style>
 				
 				 <script>
 				    var body = document.body,
