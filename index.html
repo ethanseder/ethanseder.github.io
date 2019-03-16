@@ -176,8 +176,8 @@
 				Cars have always been a passion of mine. This team has allowed me to put into action the many hours I spent learning principles in the classroom.
 				From heavy machining to carbon fiber manufacturing I am building things I have always dreamed of.
                         </p>
-                        <a href="#popup1" type="button" class="open-overlay" >View Project</a>
-			<button type="button" class="open-overlay" href="#popup1">View ProjectT</button>
+                         <a href="#popup1" type="button" class="open-overlay" >View Project</a>
+			<!--<button type="button" class="open-overlay" href="#popup1">View ProjectT</button> -->
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -251,14 +251,17 @@
 					width: 100%;
 					background: #fff;
 					border-radius: 0;
-					padding: 5px 10px;
+					padding:10px;
 					border: none;
 					color: #3498db;
 					font-weight: 700;
 					@include transition();
 
 					&:hover {
-					    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+					    color: $base-color-hover;
+					    text-decoration: none;
+					    background: #eee;
+					    border-radius: 4px;
 					}
 				    }
 
@@ -266,13 +269,12 @@
 				[aria-hidden="false"] { display: block; }
 				</style>
 				
-				<section id="popup1" class="overlay" aria-hidden= "true">
+				<section class="overlay" aria-hidden= "true">
 					<div class="popup">
 						<h2>SEAS Racing Team</h2>
 						<a class="close-overlay" type="button" href="#projects">&times;</a>
 						<div class="content">
 							Images coming soon!
-						<button type="button" class="close-overlay">CLOSE LAYER</button>
 						</div>
 					</div>
 				</section>
