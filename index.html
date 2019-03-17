@@ -75,9 +75,9 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                       My name is Ethan Seder and I am pursuing a degree in mechanical engineering from Harvard.
+                       My name is Ethan Seder and I am pursuing a degree in mechanical engineering from Harvard. 
 		       The goal of this website is to show my interest in building, tinkering, and designing. 
-		       Included are some of my projects, past and present.
+		       Included are some of my past projects and ones I am currently working on.
                     </p>
                 </div>
             </div>
@@ -144,12 +144,8 @@
                     Member of Young Investors Club
                 </li>
                 <li>
-                    Member of US National Junior Rowing Team
+                    Member of Marin Rowing Association Varsity Men’s Rowing Team
                 </li>
-		<li>
-                    Silver Medalist at World Junior Rowing Championships
-                </li>
-		    
             </ul>
         </div>
 	    
@@ -176,8 +172,7 @@
 				Cars have always been a passion of mine. This team has allowed me to put into action the many hours I spent learning principles in the classroom.
 				From heavy machining to carbon fiber manufacturing I am building things I have always dreamed of.
                         </p>
-			    <a href="#popup1" type="button" class="open-overlay" >View Project</a>
-			<button type="button" class="open-overlay" href="#popup1" >View Project</button>
+                        <a href="#popup1">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -191,10 +186,10 @@
                     <div class="project-info">
                         <h3>ES51 Robot Competition</h3>
                         <p>
-				ES51: Computer Aided Machine Design focuses on the design and construction of mechanical and electromechanical devices. 
-				It taught me engineering graphics, sketching, dimensioning, tolerancing, materials selection, and structural design.  
-				Our team manufactured a robot using parts we designed and manufactured.
-				The class taught me about the precision needed in design and manufacturing.
+				One of the classes I have taken here at Harvard that taught me about the precision needed in design and manufacturing was ES51: Computer Aided Machine Design. 
+				It is focused on the design and construction of mechanical and electromechanical devices. It teaches engineering graphics, sketching, dimensioning, tolerancing, 
+				materials selection, and structural design. In the class we were separated into teams and then given the task to manufacture a robot for a competition using only parts that we designed and manufactured. 
+				My team ended up getting 2nd place overall.
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -227,99 +222,15 @@
         </div>
     </div>
     <!-- End #projects -->
-					<style>
-				
-					.noscroll { overflow: hidden; }
-
-					.overlay { 
-					   position: fixed; 
-					   overflow-y: scroll;
-					   top: 0; right: 0; bottom: 0; left: 0; }
-
-					[aria-hidden="true"] { display: none; }
-					[aria-hidden="false"] { display: block; }
-			
-
-					* { box-sizing: border-box; }
-					button { padding: 1.5em 4em; cursor: pointer;}
-					pre { background: #fafafa; padding: 15px; border: 1px #ccd dashed; }
-					pre + p { margin: 5vh 0; }
-					
-					
-				button {
-					display: inline;
-					width: 100%;
-					background: #fff;
-					border-radius: 0;
-					padding:10px;
-					border: none;
-					color: #3498db;
-					font-weight: 700;
-					@include transition();
-
-					&:hover {
-					    color: $base-color-hover;
-					    text-decoration: none;
-					    background: #eee;
-					    border-radius: 4px;
-					}
-				    }
-
-				[aria-hidden="true"]  { display: none; }
-				[aria-hidden="false"] { display: block; }
-				</style>
-				
-				<section id="popup1" class="overlay" aria-hidden= "true">
+				<div id="popup1" class="overlay">
 					<div class="popup">
-						<h2>SEAS Racing Team</h2>
-						<a class="close-overlay" type="button" href="#projects">&times;</a>
+						<h2>SEAS Racing Team!</h2>
+						<a class="close" href="#projects">&times;</a>
 						<div class="content">
 							Images coming soon!
 						</div>
 					</div>
-				</section>
-				
-				<!--
-				<section class="overlay" aria-hidden="true">
-				  <div>
-				    <h2>Hello, I'm the overlayer</h2>
-				    ...   
-				    <button type="button" class="close-overlay">CLOSE LAYER</button>
-				  </div>
-				</section>
-				-->
-				
-				
-				 <script>
-				function noScroll()
-				{
-
-					    var body = document.body,
-					    overlay = document.querySelector('.overlay'),
-					    overlayBtts = document.querySelectorAll('button[class$="overlay"]');
-
-					[].forEach.call(overlayBtts, function(btt) {
-
-					  btt.addEventListener('click', function() { 
-
-					     /* Detect the button class name */
-					     var overlayOpen = this.className === 'open-overlay';
-
-					     /* Toggle the aria-hidden state on the overlay and the 
-						no-scroll class on the body */
-					     overlay.setAttribute('aria-hidden', !overlayOpen);
-					     body.classList.toggle('noscroll', overlayOpen);
-
-					     /* On some mobile browser when the overlay was previously
-						opened and scrolled, if you open it again it doesn't 
-						reset its scrollTop property */
-					     overlay.scrollTop = 0;
-
-					  }, false);
-
-					});
-				}
-				</script>
+				</div>
 				
 
     <div id="skills">
