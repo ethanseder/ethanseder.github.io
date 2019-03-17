@@ -108,4 +108,18 @@
     width: 70%;
   }
 }
+.modal {
+  overflow-y: hidden;
+}
+body.modal-open {
+  margin-right: 0;
+}
+
+
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 
