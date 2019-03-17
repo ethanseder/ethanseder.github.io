@@ -104,9 +104,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                       My name is Ethan Seder and I am pursuing a degree in mechanical engineering from Harvard.
-		       The goal of this website is to show my interest in building, tinkering, and designing. 
-		       Included are some of my projects, past and present.
+                       My name is Ethan Seder and I am pursuing a degree in mechanical engineering from Harvard. The goal of this website is to show my interest in building, tinkering, and designing. Included are some of my projects, past and present.
                     </p>
                 </div>
             </div>
@@ -175,7 +173,7 @@
                 <li>
                     Member of US National Junior Rowing Team
                 </li>
-		<li>
+		        <li>
                     Silver Medalist at World Junior Rowing Championships
                 </li>
 		    
@@ -198,15 +196,14 @@
                     <div class="project-info">
                         <h3>SEAS Racing Team</h3>
                         <p>
-                        	One of the projects I have been a part of here at Harvard is the SEAS racing team. 
-				We are building a fuel-efficient vehicle to compete in the SAE Supermileage Competition. 
-				On the team this past year I designed and manufactured the rear wheel and transmission to minimize power loss. 
-				In 2018 we placed the best of best of any first year team.
-				Cars have always been a passion of mine. This team has allowed me to put into action the many hours I spent learning principles in the classroom.
-				From heavy machining to carbon fiber manufacturing I am building things I have always dreamed of.
+                        	I have been a part of Harvard’s SEAS racing team for two years. We are building a fuel-efficient vehicle to compete in the SAE Super-mileage Competition. Last year, I designed and manufactured the rear wheel and transmission to minimize power loss. In June 2018 we placed the highest of any first-year teams. 
+
+                            As President of the team, I have learned handle all administrative duties such as the meeting schedule, budget, accommodations, shipping, and compliance with regulations. From machining to carbon fiber manufacturing I am working hard as an engineer to make our race car fast and fuel efficient.
+
+
                         </p>
                         <!-- Trigger/Open The Modal -->
-                        <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#popup1">View Project</a>
+                        <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#Racing">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -225,7 +222,7 @@
 				Our team manufactured a robot using parts we designed and manufactured.
 				The class taught me about the precision needed in design and manufacturing.
                         </p>
-                        <a href="#">View Project</a>
+                         <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#ES51">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -236,15 +233,15 @@
 		<div id="more-projects" class="row">
 		    <div class="project shadow-large">
 			<div class="project-image">
-			    <img src="images/project.jpg" />
+			    <img src="images/FunProjectHome.jpg"/>
 			</div>
 			<!-- End .project-image -->
 			<div class="project-info">
 			    <h3>Fun Projects</h3>
 			    <p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+				Here are some fun project I have built during my free time to experiment with different materials and be creative.
 			    </p>
-			    <a href="ethanseder.github.io/images/">View Project</a>
+			     <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#FunProjects">View Projects</a>
 			</div>
 			<!-- End .project-info -->
 		    </div>
@@ -265,10 +262,34 @@
 
 
     <!-- SEAS Racing Modal -->
-      <div id="popup1" class="overlay" aria-hidden= "true">
+      <div id="Racing" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>SEAS Racing Team</h2>
+            <div class="content">
+                <img src="images/FunProjectHome.jpg" />
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ES51 Modal -->
+      <div id="ES51" class="overlay" aria-hidden= "true">
+        <div class="popup">
+            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
+            <h2>ES51 Project</h2>
+            <div class="content">
+                Images coming soon!
+            </div>
+        </div>
+    </div>
+
+      <!-- Fun Projects Modal -->
+      <div id="FunProjects" class="overlay" aria-hidden= "true">
+        <div class="popup">
+            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
+            <h2>ES51 Project</h2>
             <div class="content">
                 Images coming soon!
             </div>
