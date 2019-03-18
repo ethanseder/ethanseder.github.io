@@ -104,7 +104,7 @@
 }
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 700px){
@@ -130,6 +130,33 @@ body.modal-open {
 .smallerImage{
   max-width: 200px;
   height: 200px;
+  padding: 10px;
+}
+
+.projectImage{
+  max-width: 300px;
+  transform: rotate(90deg);
+  padding: 10px;
+}
+
+.mediumImage{
+  max-width: 220px;
+  height: 220px;
+  padding: 10px;
+}
+
+.largeImage{
+  max-width: 350px;
+  height: 220px;
+  padding: 10px;
+}
+
+.btn{
+    display: inline-block;
+    color: #3498db;
+    text-align: center;
+    border: 1px solid #fff;
+    }
 }
 
 

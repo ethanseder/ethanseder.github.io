@@ -39,8 +39,6 @@
           }
         }
     </script>
-
-
 </head>
 
 <body>
@@ -224,27 +222,63 @@
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 		    <!-- End .project -->
 		
-		    <a id="view-more-projects" href="#">View More Projects</a>
+		<a id="view-more-projects" href="#">View More Fun Projects</a>
 		<div id="more-projects" class="row">
-		    <div class="project shadow-large">
-			<div class="project-image">
-			    <img src="images/FunProjectHome.jpg"/>
-			</div>
-			<!-- End .project-image -->
-			<div class="project-info">
-			    <h3>Fun Projects</h3>
-			    <p>
-				Here are some fun project I have built during my free time to experiment with different materials and be creative.
-			    </p>
-			     <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#FunProjects">View Projects</a>
-			</div>
-			<!-- End .project-info -->
-		    </div>
-		    <!-- End .project -->
-		</div>
+            
+            <!-- Motorbike -->
+            <div class="project shadow-large">
+            <div class="project-image">
+                <img src="images/motorbike.jpg"/>
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+                <h3>Custom Motorized Bicycle</h3>
+                <p>
+                    206cc motorized bicycle. Built to move around campus quickily and easily.
+                </p>
+                 <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#motorbike">View Project</a>
+            </div>
+            <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+
+            <!-- Rain Guard -->
+            <div class="project shadow-large">
+            <div class="project-image">
+                <img src="images/RainGuardHome.jpg">
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+                <h3>Carbon Fiber Rain Guard</h3>
+                <p>
+                Front rain gaurd for my personal bicycle. Built using a kevlar-carbon mix.
+                </p>
+                 <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#guard">View Project</a>
+            </div>
+            <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+        <!-- Guitar -->
+        <div class="project shadow-large">
+            <div class="project-image">
+                <img src="images/guitar.jpg"/>
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+                <h3>Custom Guitar</h3>
+                <p>
+                Laser printed Guitar. Made primarily out of MDF, plywood, and soild timber.
+                </p>
+                 <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#guitar">View Project </a>
+            </div>
+            <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+            </div>
 		    
             </div>
         </div>
@@ -253,52 +287,105 @@
 
 
     <!-- SEAS Racing Modal -->
-      <div id="Racing" class="overlay" aria-hidden= "true">
+      <div style="z-index: 5" id="Racing" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>SEAS Racing Team</h2>
             <div class="content">
-                Here are some photos showing the Design Process of our Race Car.
-                <img src="images/FunProjectHome.jpg" />
+            <p>
+                Here are some photos showing our race car when it was almost ready for competition. I was in charge of building the transmisssion and reudcing the inefficenies. I used two clutches: one centifugal on the engine and one coaster hub on the rear wheel. This was to reduce the rotational mass while the engine was off and our car was decelerating.
+            </p>
+                <img src="images/" />
+
+            <video width="320" height="240" controls>
+              <source src="motorbike.mp4" type="video/mp4">
+                <source src="motorbike.webm" />
+              Your browser does not support the video tag.
+            </video>
 
 
             </div>
         </div>
     </div>
      <!-- ES51 Modal -->
-      <div style="z-index: -1" id="ES51" class="overlay" aria-hidden= "true">
+      <div style="z-index: 5" id="ES51" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>ES51 Project</h2>
             <div class="content">
-                Images coming soon!
-                <img src="images/Guitar.jpg" class="smallerImage"/>
+                <p>
+                    This is the robot my team and I designed for ES51. The goal was to move as many different sized balls over the middle barrier in 3 minutes. Pictured Below are some of those photos taked during the process and at the end.
+                </p>
+                <img src="images/iso view.jpeg" class="mediumImage"/>
+                <img src="images/actualRobot.jpeg" class="mediumImage"/>
+                <img src="images/bottom_view.jpeg" class="mediumImage"/>
+                <img src="images/movement.jpeg" class="mediumImage"/>
+                <img src="images/4wheel.jpeg" class="mediumImage"/>
+                <img src="images/liftSystem.jpeg" class="mediumImage"/>
+                <img src="images/drawing.jpeg" class="largeImage"/>
+
+                <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
+                    <a href="ethanseder.github.io/images/ES51FinalReport.pdf" download="ES51FinalReport.pdf" class="btn">Download Final Report</a>
+                </p>
             </div>
         </div>
     </div>
 
-      <!-- Fun Projects Modal -->
-      <div style="z-index: 5" id="FunProjects" class="overlay" aria-hidden= "true">
+      <!-- Rain Guard Modal -->
+      <div style="z-index: 5" id="guard" class="overlay" aria-hidden= "true">
+        <div class="popup">
+            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
+            <h2>Fun Project</h2>
+            <div class="content">
+                <h3> Composite Rain Guard: </h3>
+                <p>
+                    This rain guard was built for my bike to protect my legs from getting wet in the rain. This was primarily for fun but also allowed me to explore the strength, rigidity and weight properties of carbon.
+                </p>
+                <img src="images/layup.jpeg" class="smallerImage"/>
+                <img src="images/layup1.jpeg" class="smallerImage"/>
+                <img src="images/layup2.jpeg" class="smallerImage"/>
+            </div>
+        </div>
+    </div>
+    <!-- Guitar Modal -->
+      <div style="z-index: 5" id="guitar" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>Fun Project</h2>
             <div class="content">
                 <h3> Custom Guitar: </h3>
+                <p>
+                    This Guitar was made mostly using a laser cutter and hand tools. The sides were made from layers of MDF and the top was cut out of plywood and rastered with a western theme. The back was given a similar treatment with a small Harvard crest.
+                </p> 
+                <img src="images/laser sides.jpg"/ class="smallerImage">
+                <img src="images/neck.jpeg" class="smallerImage"/>
+                <img src="images/body.jpeg" class="smallerImage"/>
+                <img src="images/slot.jpg" class="smallerImage"/>
 
-                <p>
-                    Here I decided to make a custom Guitar using mainly a laser cutter and power hand tools.
-                </p> 
-                <img src="images/Guitar.jpg"/>
-                <p>
-                    Laser Cut Sides:
-                </p> 
-                <img src="images/laser sides.jpg" class="smallerImage"/>
                   <p>
-                    Cad Drawing and finsihed product of bridges:
+                    I also used the laser cutter to create the bridges and neck.
                 </p> 
-                <img src="images/Cad.jpg" class="smallerImage"/>
+                <img src="images/cad.jpg" class="smallerImage"/>
                 <img src="images/bridge.jpg" class="smallerImage"/>
 
+            </div>
+        </div>
+    </div>
+    <!-- Fun Projects Modal -->
+      <div style="z-index: 5" id="motorbike" class="overlay" aria-hidden= "true">
+        <div class="popup">
+            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
+            <h2>Fun Project</h2>
+            <div class="content">
+                <h3> Motorized Bicycle </h3>
+                <p>
+                    This motorized bike was built using spare parts from the SEAS Racing Team. Using the skills, I acquired building various parts on the race car, I decided to build this bike to easily move around campus. It is easy to ride and fun to make new modifications too. I don’t ride it every day but when I do, I always get lots of thumbs ups and waves.
+                </p> 
+                <video width="640" height="480" controls>
+                  <source src="motorbike.mp4" type="video/mp4">
+                    <source src="motorbike.webm" />
+                  Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
