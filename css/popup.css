@@ -59,6 +59,13 @@
   font-family: 'Lato', sans-serif;
 }
 
+.popup h3 {
+  margin-top: 0;
+  text-align: center;
+  color: $base-color;
+  font-family: 'Lato', sans-serif;
+}
+
 .popup a {
         position: absolute;
         /*top: 20px;
@@ -118,6 +125,11 @@ body.modal-open {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.smallerImage{
+  max-width: 200px;
+  height: 200px;
 }
 
 

@@ -38,10 +38,8 @@
             modal.style.display = "none";
           }
         }
-        window.onload = function(){
-          alert("here!");
-        }</script>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    </script>
+
 
 </head>
 
@@ -252,13 +250,6 @@
         </div>
     </div>
     <!-- End #projects -->
-    <script type="text/javascript">
-        $('#modal').modal().on('shown', function(){
-        $('body').css('overflow', 'hidden');
-    }).on('hidden', function(){
-        $('body').css('overflow', 'auto');
-    })
-    </script>
 
 
     <!-- SEAS Racing Modal -->
@@ -267,31 +258,47 @@
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>SEAS Racing Team</h2>
             <div class="content">
+                Here are some photos showing the Design Process of our Race Car.
                 <img src="images/FunProjectHome.jpg" />
 
 
             </div>
         </div>
     </div>
-
-    <!-- ES51 Modal -->
-      <div id="ES51" class="overlay" aria-hidden= "true">
+     <!-- ES51 Modal -->
+      <div style="z-index: -1" id="ES51" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
             <h2>ES51 Project</h2>
             <div class="content">
                 Images coming soon!
+                <img src="images/Guitar.jpg" class="smallerImage"/>
             </div>
         </div>
     </div>
 
       <!-- Fun Projects Modal -->
-      <div id="FunProjects" class="overlay" aria-hidden= "true">
+      <div style="z-index: 5" id="FunProjects" class="overlay" aria-hidden= "true">
         <div class="popup">
             <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
-            <h2>ES51 Project</h2>
+            <h2>Fun Project</h2>
             <div class="content">
-                Images coming soon!
+                <h3> Custom Guitar: </h3>
+
+                <p>
+                    Here I decided to make a custom Guitar using mainly a laser cutter and power hand tools.
+                </p> 
+                <img src="images/Guitar.jpg"/>
+                <p>
+                    Laser Cut Sides:
+                </p> 
+                <img src="images/laser sides.jpg" class="smallerImage"/>
+                  <p>
+                    Cad Drawing and finsihed product of bridges:
+                </p> 
+                <img src="images/Cad.jpg" class="smallerImage"/>
+                <img src="images/bridge.jpg" class="smallerImage"/>
+
             </div>
         </div>
     </div>
