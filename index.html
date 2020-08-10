@@ -116,10 +116,11 @@
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             
-            <div data-date="September 2020">
+            <div data-date="Summer 2020">
                 <h3>Strategy&</h3>
                 <h4>Deals Strategy Intern</h4>
-                <p>
+                <p>Trained in general consulting practices including:
+                    Acquisition Analysis, Brand Equity, Customer Due Diligence, Market Research
                 </p>
             </div>
 
@@ -174,7 +175,7 @@
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>Harvard University </h3>
-            <span class="education-date">Sept 2017 - Sept 2021</span>
+            <span class="education-date">2017 - 2021</span>
             <h4>Bachelor of Science in Mechanical Engineering</h4>
             <p>
                 Candidate for S.B. in Engineering Sciences (Mechanical and Materials Sciences and Engineering) Coursework in Computer Science, Mechanical Engineering, Statics, CAD, Machining. Commit 25 hours per week to the Harvard Varsity Men’s Rowing Program.  Competed in Varsity Boat at Head of the Charles.
@@ -185,7 +186,7 @@
 	
         <div class="education-block">
             <h3>Jewish Community High School of the Bay</h3>
-            <span class="education-date">Sept 2013 - Sept 2017</span>
+            <span class="education-date">2013 - 2017</span>
             <h4>Dual Curriculum Program,</h4>
             <ul>
                 <li>
@@ -209,6 +210,26 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+                
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/accident.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Bike Safety Airbag</h3>
+                        <p>
+                            I am developing an airbag for bicyclists. The system is designed to be integrated into the shoulder straps of the user’s backpack. Using 9-axis IMU's and an Arduino controller, the system senses impending impacts and deploys an airbag. The airbag is designed to protect the upper chest and the lower half of the face.
+
+                            The algorithm, developed using Unity3d software and supported by real world analysis, was tested against simulated accidents and was refined to reduce false deployments. 
+                        </p>
+                        <!-- Trigger/Open The Modal -->
+                        <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#Accident">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->                
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/SAE Finish Line.jpg" />
@@ -217,9 +238,9 @@
                     <div class="project-info">
                         <h3>SEAS Racing Team</h3>
                         <p>
-                        	I have been a part of Harvard’s SEAS racing team for two years. We are building a fuel-efficient vehicle to compete in the SAE Super-mileage Competition. Last year, I designed and manufactured the rear wheel and transmission to minimize power loss. In June 2018, we placed the highest of any first-year teams. 
+                        	I have been a part of Harvard’s SEAS racing team for two years. We are building a fuel-efficient vehicle to compete in the SAE Super-mileage Competition. Last year, I designed and manufactured the rear wheel and transmission to minimize power loss. In June 2018, we placed the highest of any first-year teams.  </p>
 
-                            As President of the team, I have handled administrative duties such as scheduling, budgeting, and complying with regulations. From machining to carbon fiber manufacturing, I am working hard to engineer our race car to be fast and fuel efficient.
+                             <p> As President of the team, I have handled administrative duties such as scheduling, budgeting, and complying with regulations. From machining to carbon fiber manufacturing, I am working hard to engineer our race car to be fast and fuel efficient.
 
 
                         </p>
@@ -307,6 +328,36 @@
     </div>
     <!-- End #projects -->
 
+    <!-- Airbag Modal -->
+      <div style="z-index: 5" id="Accident" class="overlay" aria-hidden= "true">
+        <div class="popup">
+            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
+            <h2>Bike Safety Airbag</h2>
+            <div class="content">
+                <p> 
+                    I am developing an airbag for bicyclists. The system is designed to be integrated into the shoulder straps of the user’s backpack. Using 9-axis IMU's and an Arduino controller, the system senses impending impacts and deploys an airbag. The airbag is designed to protect the upper chest and the lower half of the face.
+
+                    <p>The algorithm, developed using Unity3d software and supported by real world analysis, was tested against simulated accidents and was refined to reduce false deployments.<p>
+
+                    <p>Here are some videos on the simulation I have created as well as real world verification of my algorithim.
+                </p>
+                <img src="images/tracker.png" class="mediumImage"/>
+                <img src="images/arduino.jpg" class="mediumImage"/>
+                <img src="images/data.png" class="mediumImage"/>
+
+                 <p align="center">
+                    <iframe width="373" height="210" src="https://www.youtube.com/embed/bOu4UajWHoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+
+                <!--
+                <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
+                    <a href="ethanseder.github.io/images/ES51FinalReport.pdf" download="ES51FinalReport.pdf" class="btn">Download Final Report</a>
+                </p>
+                -->
+            </div>
+        </div>
+    </div>
+
 
     <!-- SEAS Racing Modal -->
       <div style="z-index: 5" id="Racing" class="overlay" aria-hidden= "true">
@@ -315,7 +366,7 @@
             <h2>SEAS Racing Team</h2>
             <div class="content">
             <p>
-                Here are some photos showing our race car when it was almost ready for competition. I was in charge of building the transmisssion and reudcing the inefficenies. I used two clutches: one centifugal on the engine and one coaster hub on the rear wheel. This was to reduce the rotational mass while the engine was off and our car was decelerating.
+                Here are some photos showing our race car. I was in charge of building the transmission and reudcing the inefficiencies. I used two clutches: one centrifugal on the engine and one coaster hub on the rear wheel. This was to reduce the rotational mass while the engine was off and our car was decelerating.
             </p>
 
             <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
@@ -340,7 +391,7 @@
             <h2>ES51 Project</h2>
             <div class="content">
                 <p>
-                    This is the robot my team and I designed for ES51. The goal was to move as many different sized balls over the middle barrier in 3 minutes. Pictured Below are some of those photos taked during the process and at the end.
+                    This is the robot my team and I designed for ES51. The goal was to move as many different sized balls over the middle barrier in three minutes. Pictured below are some development photos.
                 </p>
                 <img src="images/iso view.jpeg" class="mediumImage"/>
                 <img src="images/actualRobot.jpeg" class="mediumImage"/>
@@ -365,7 +416,7 @@
             <div class="content">
                 <h3> Composite Rain Guard: </h3>
                 <p>
-                    This rain guard was built for my bike to protect my legs from getting wet in the rain. This was primarily for fun but also allowed me to explore the strength, rigidity and weight properties of carbon.
+                    This rain guard was built for my bike to protect my legs from getting wet. This was primarily for fun but also allowed me to explore the strength, rigidity and weight properties of carbon.
                 </p>
                 <img src="images/layup.jpeg" class="smallerImage"/>
                 <img src="images/layup1.jpeg" class="smallerImage"/>
@@ -381,7 +432,7 @@
             <div class="content">
                 <h3> Custom Guitar: </h3>
                 <p>
-                    This Guitar was made mostly using a laser cutter and hand tools. The sides were made from layers of MDF and the top was cut out of plywood and rastered with a western theme. The back was given a similar treatment with a small Harvard crest.
+                    This Guitar was made using a laser cutter and hand tools. The sides were made from layers of MDF and the top was cut out of plywood and rastered with a western theme. The back was ornamented with a small Harvard crest.
                 </p> 
                 <img src="images/laser sides.jpg"/ class="smallerImage">
                 <img src="images/neck.jpeg" class="smallerImage"/>
@@ -405,7 +456,7 @@
             <div class="content">
                 <h3> Motorized Bicycle </h3>
                 <p>
-                    This motorized bike was built using spare parts from the SEAS Racing Team. Using the skills, I acquired building various parts on the race car, I decided to build this bike to easily move around campus. It is easy to ride and fun to make new modifications too. I don’t ride it every day but when I do, I always get lots of thumbs ups and waves.
+                    This motorized bike was built using spare parts from the SEAS Racing Team. Using the skills I acquired building various parts on the race car, I decided to build this bike to easily move around campus. It is fun to ride and easy to modify. I don’t ride it every day but when I do, I always get lots of thumbs ups and waves.
                 </p> 
 
                 <p align="center">
@@ -419,13 +470,14 @@
         <h2 class="heading">Skills</h2>
         <ul>
             <li>SolidWorks</li>
+            <li>Machining</li>
             <li>Matlab</li>
+            <li>COMSOL</li>
             <li>Python</li>
             <li>CAD</li>
             <li>G Code</li>
             <li>Powerpoint</li>
             <li>Leadership</li>
-            <li>Machining</li>
             <li>Java</li>
         </ul>
     </div>
@@ -450,7 +502,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2019 Ethan Seder
+                        Copyright &copy; 2020 Ethan Seder
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -461,7 +513,7 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/ethan-seder-bb7073113/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/ethanseder/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/ethan.seder" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
