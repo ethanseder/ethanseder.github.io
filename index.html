@@ -192,18 +192,16 @@
                 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/accident.png" />
+                        <img src="images/airbag2.jpeg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Bike Safety Airbag</h3>
                         <p>
-                            I am developing an airbag for bicyclists. The system is designed to be integrated into the shoulder straps of the user’s backpack. Using 9-axis IMU's and an Arduino controller, the system senses impending impacts and deploys an airbag. The airbag is designed to protect the upper chest and the lower half of the face.
-
-                            The algorithm, developed using Unity3d software and supported by real world analysis, was tested against simulated accidents and was refined to reduce false deployments. 
+                            I am developing an airbag for bicyclists. The system is designed to be integrated into the shoulder straps of the user’s backpack. The system is capable of senses impending impacts and deploys within 200 ms to protect the user. The airbag is designed to protect the neck, clavicle, ribs, and shoulder.
                         </p>
                         <!-- Trigger/Open The Modal -->
-                        <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#Accident">View Project</a>
+                        <a href="https://youtu.be/e5wEGWeX2Uc" target="_blank">Check out a video of it in action</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -223,8 +221,6 @@
 
 
                         </p>
-                        <!-- Trigger/Open The Modal -->
-                        <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#Racing">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -240,118 +236,10 @@
                         <p>
 				ES51: Computer Aided Machine Design focuses on the design and construction of mechanical and electromechanical devices. I learned engineering graphics, sketching, dimensioning, tolerancing, materials selection, structural design, and the necessity of precision in design and manufacturing. Our team designed and manufactured a robot that won 2nd place in the class competition.
                         </p>
-                         <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#ES51">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
 		    <!-- End .project -->
-		
-		<a id="view-more-projects" href="#">View More Fun Projects</a>
-		<div id="more-projects" class="row">
-            
-            <!-- Motorbike -->
-            <div class="project shadow-large">
-            <div class="project-image">
-                <img src="images/motorbike.jpg"/>
-            </div>
-            <!-- End .project-image -->
-            <div class="project-info">
-                <h3>Custom Motorized Bicycle</h3>
-                <p>
-                    206cc motorized bicycle. Built to move around campus quickily and easily.
-                </p>
-                 <a data-toggle="modal" onclick="($('body').addClass('stop-scrolling')); $('body').bind('touchmove', function(e){e.preventDefault()})" href="#motorbike">View Project</a>
-            </div>
-            <!-- End .project-info -->
-            </div>
-            <!-- End .project -->=
-
-            </div>
-		    
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <!-- Airbag Modal -->
-      <div style="z-index: 5" id="Accident" class="overlay" aria-hidden= "true">
-        <div class="popup">
-            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
-            <h2>Bike Safety Airbag</h2>
-            <div class="content">
-                <p> 
-                    I am developing an airbag for bicyclists. The system is designed to be integrated into the shoulder straps of the user’s backpack. Using 9-axis IMU's and an Arduino controller, the system senses impending impacts and deploys an airbag. The airbag is designed to protect the upper chest and the lower half of the face.
-
-                    <p>The algorithm, developed using Unity3d software and supported by real world analysis, was tested against simulated accidents and was refined to reduce false deployments.<p>
-
-                    <p>Here are some videos on the simulation I have created as well as real world verification of my algorithim.
-                </p>
-                <img src="images/tracker.png" class="mediumImage"/>
-                <img src="images/arduino.jpg" class="mediumImage"/>
-                <img src="images/data.png" class="mediumImage"/>
-
-                 <p align="center">
-                    <iframe width="373" height="210" src="https://www.youtube.com/embed/bOu4UajWHoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <!--
-                <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
-                    <a href="ethanseder.github.io/images/ES51FinalReport.pdf" download="ES51FinalReport.pdf" class="btn">Download Final Report</a>
-                </p>
-                -->
-            </div>
-        </div>
-    </div>
-
-
-    <!-- SEAS Racing Modal -->
-      <div style="z-index: 5" id="Racing" class="overlay" aria-hidden= "true">
-        <div class="popup">
-            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
-            <h2>SEAS Racing Team</h2>
-            <div class="content">
-            <p>
-                Here are some photos showing our race car. I was in charge of building the transmission and reudcing the inefficiencies. I used two clutches: one centrifugal on the engine and one coaster hub on the rear wheel. This was to reduce the rotational mass while the engine was off and our car was decelerating.
-            </p>
-
-            <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
-                    <a href="https://www.seas.harvard.edu/content/driven-to-compete"class="btn" target="_blank">Link to Harvard's article</a>
-                </p>
-            
-                <img src="images/racing.jpeg" class="mediumImage"/>
-                <img src="images/racing1.jpeg" class="mediumImage"/>
-                <img src="images/racing2.jpeg" class="mediumImage"/>
-            
-            <p align="center">
-                <iframe width="373" height="210" src="https://www.youtube.com/embed/0gZLlW_xScs" frameborder="0" align="middle" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </p>
-
-            </div>
-        </div>
-    </div>
-     <!-- ES51 Modal -->
-      <div style="z-index: 5" id="ES51" class="overlay" aria-hidden= "true">
-        <div class="popup">
-            <a class="close-overlay" type="button" onclick="$('body').removeClass('stop-scrolling'); $('body').unbind('touchmove')" href="#projects">&times;</a>
-            <h2>ES51 Project</h2>
-            <div class="content">
-                <p>
-                    This is the robot my team and I designed for ES51. The goal was to move as many different sized balls over the middle barrier in three minutes. Pictured below are some development photos.
-                </p>
-                <img src="images/iso view.jpeg" class="mediumImage"/>
-                <img src="images/actualRobot.jpeg" class="mediumImage"/>
-                <img src="images/bottom_view.jpeg" class="mediumImage"/>
-                <img src="images/movement.jpeg" class="mediumImage"/>
-                <img src="images/4wheel.jpeg" class="mediumImage"/>
-                <img src="images/liftSystem.jpeg" class="mediumImage"/>
-                <img src="images/drawing.jpeg" class="largeImage"/>
-
-                <p style="position: absolute; left: 0; bottom: 30px; width: 100%; text-align: center;">
-                    <a href="ethanseder.github.io/images/ES51FinalReport.pdf" download="ES51FinalReport.pdf" class="btn">Download Final Report</a>
-                </p>
-            </div>
-        </div>
-    </div>
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
